@@ -166,8 +166,8 @@ const times = [
     vitorias: 18,
     empates: 6,
     derrotas: 4,
-    logo: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80",
-    foto: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=80"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Flamengo_brasao.svg/150px-Flamengo_brasao.svg.png",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Flamengo_brasao.svg/150px-Flamengo_brasao.svg.png"
   },
   {
     nome: "Palmeiras",
@@ -176,8 +176,8 @@ const times = [
     vitorias: 16,
     empates: 9,
     derrotas: 3,
-    logo: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=80",
-    foto: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/150px-Palmeiras_logo.svg.png",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/150px-Palmeiras_logo.svg.png"
   },
   {
     nome: "São Paulo",
@@ -186,8 +186,8 @@ const times = [
     vitorias: 10,
     empates: 6,
     derrotas: 11,
-    logo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80",
-    foto: "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?auto=format&fit=crop&w=900&q=80"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Sao_Paulo_FC_logo.svg/150px-Sao_Paulo_FC_logo.svg.png",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Sao_Paulo_FC_logo.svg/150px-Sao_Paulo_FC_logo.svg.png"
   },
   {
     nome: "Corinthians",
@@ -196,8 +196,8 @@ const times = [
     vitorias: 8,
     empates: 8,
     derrotas: 12,
-    logo: "https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=900&q=80",
-    foto: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=900&q=80"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Corinthians_logo.svg/150px-Corinthians_logo.svg.png",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Corinthians_logo.svg/150px-Corinthians_logo.svg.png"
   },
   {
     nome: "Atlético Mineiro",
@@ -206,8 +206,8 @@ const times = [
     vitorias: 11,
     empates: 7,
     derrotas: 9,
-    logo: "https://images.unsplash.com/photo-1543351611-58f69d7c1781?auto=format&fit=crop&w=900&q=80",
-    foto: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=80"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Atletico_mineiro_logo.svg/150px-Atletico_mineiro_logo.svg.png",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Atletico_mineiro_logo.svg/150px-Atletico_mineiro_logo.svg.png"
   },
   {
     nome: "Botafogo",
@@ -216,8 +216,8 @@ const times = [
     vitorias: 9,
     empates: 8,
     derrotas: 11,
-    logo: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80",
-    foto: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Botafogo_de_Futebol_e_Regatas_logo.svg/150px-Botafogo_de_Futebol_e_Regatas_logo.svg.png",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Botafogo_de_Futebol_e_Regatas_logo.svg/150px-Botafogo_de_Futebol_e_Regatas_logo.svg.png"
   }
 ];
 
@@ -287,7 +287,7 @@ function renderTimes() {
   container.innerHTML = times.map((time) => `
     <article class="club-card">
       <div class="club-crest">
-        <img src="${time.foto}" alt="Foto do time ${time.nome}" class="club-logo">
+        <img src="${time.logo || time.foto}" alt="Escudo do ${time.nome}" class="club-logo">
       </div>
       <div class="club-body">
         <h3>${time.nome}</h3>
