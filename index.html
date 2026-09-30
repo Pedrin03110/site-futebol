@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutbolMax - Resultados, Notícias e Tabelas</title>
+    <title>FutbolMax - Futebol brasileiro e Data FIFA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,6 +14,7 @@
                 <a href="#home">Início</a>
                 <a href="#resultados">Resultados</a>
                 <a href="#noticias">Notícias</a>
+                <a href="#data-fifa">Data FIFA</a>
                 <a href="#tabelas">Brasileirão</a>
                 <a href="#times">Times</a>
             </nav>
@@ -23,7 +24,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Bem-vindo ao FutbolMax</h1>
-            <p>Resultados, notícias e classificação do futebol brasileiro em um só lugar.</p>
+            <p>Resultados, notícias, Data FIFA e classificação do futebol em um só lugar.</p>
             <a class="cta-button" href="#noticias">Ver notícias</a>
         </div>
     </section>
@@ -35,27 +36,25 @@
         </section>
 
         <section id="noticias" class="section">
-            <div class="section-heading">
-                <div>
-                    <h2>Notícias recentes</h2>
-                    <p class="atualizacao">Atualizado em 30/09/2026 · Confira a fonte em cada notícia</p>
-                </div>
-            </div>
+            <h2>Notícias recentes</h2>
+            <p class="atualizacao">Atualizado em 30/09/2026 · As fontes estão disponíveis em cada notícia.</p>
             <div class="noticias-grid" id="noticiasContainer"></div>
         </section>
 
+        <section id="data-fifa" class="section">
+            <h2>🌎 Data FIFA — Seleção Brasileira</h2>
+            <p class="atualizacao">Agenda e notícias consultadas em 30/09/2026.</p>
+            <div class="noticias-grid" id="dataFifaContainer"></div>
+        </section>
+
         <section id="tabelas" class="section">
-            <div class="section-heading">
-                <div>
-                    <h2>Brasileirão Série A 2026</h2>
-                    <p class="atualizacao">Tabela completa · Atualizada em 30/09/2026</p>
-                </div>
-            </div>
+            <h2>Brasileirão Série A 2026</h2>
+            <p class="atualizacao">Tabela completa · Atualizada em 30/09/2026</p>
             <div class="tabela-container">
                 <table class="tabela-classificacao" id="tabelaContainer"></table>
             </div>
             <p class="legenda-tabela">J: jogos · V: vitórias · E: empates · D: derrotas · GP: gols pró · GC: gols contra · SG: saldo · Pts: pontos</p>
-            <p class="fonte-tabela">Fontes de consulta: <a href="https://www.estadao.com.br/esportes/futebol/campeonatos/brasileirao-serie-a-2026/" target="_blank" rel="noopener">Estadão</a> e <a href="https://cartolanews.com.br/brasileirao-serie-a/" target="_blank" rel="noopener">CartolaNews</a>.</p>
+            <p class="fonte-tabela">Fontes: <a href="https://www.estadao.com.br/esportes/futebol/campeonatos/brasileirao-serie-a-2026/" target="_blank" rel="noopener">Estadão</a> e <a href="https://cartolanews.com.br/brasileirao-serie-a/" target="_blank" rel="noopener">CartolaNews</a>.</p>
         </section>
 
         <section id="times" class="section">
@@ -65,7 +64,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 FutbolMax. Dados exibidos como referência; confirme alterações nas fontes.</p>
+        <p>&copy; 2026 FutbolMax. Dados exibidos como referência; confira as fontes para atualizações.</p>
     </footer>
     <script src="script.js"></script>
 </body>
